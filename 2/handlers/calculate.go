@@ -15,7 +15,7 @@ type CalculateHandler struct {
 	CalculateRepo repository.CalculateRepo
 }
 
-func NewCalculateHandler(calculateRepo repository.CalculateRepo) (auth *CalculateHandler) {
+func NewCalculateHandler(calculateRepo repository.CalculateRepo) *CalculateHandler {
 	return &CalculateHandler{calculateRepo}
 }
 
